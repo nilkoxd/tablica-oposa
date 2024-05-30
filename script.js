@@ -103,6 +103,7 @@ function toggleTheme() {
         body.style.backgroundColor = '#f9f9f9'; // Białe tło
         modal.classList.remove('dark-theme-modal');
         modalContent.style.backgroundColor = '#fff'; // Białe tło modalu
+        modalContent.style.color = '#333'; // Kolor tekstu w motywie domyślnym 
         elements.forEach(element => {
             if (element.dataset.kamil === "true") {
                 element.style.backgroundColor = '#00eaff'; // Niebieskie tło dla kamil
@@ -116,6 +117,7 @@ function toggleTheme() {
         body.style.backgroundColor = '#333'; // Czarne tło
         modal.classList.add('dark-theme-modal');
         modalContent.style.backgroundColor = '#444'; // Czarne tło modalu
+        modalContent.style.color = '#f9f9f9'; // Kolor tekstu w motywie ciemnym
         elements.forEach(element => {
             if (element.dataset.kamil === "true") {
                 element.style.backgroundColor = '#005f6b'; // Inny kolor niebieski dla kamil w ciemnym motywie
