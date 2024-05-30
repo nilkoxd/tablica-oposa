@@ -1,0 +1,153 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.element {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.element:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.symbol {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.info {
+  text-align: center;
+}
+
+.name {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.mass {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+  max-height: 80vh; /* Ustaw maksymalną wysokość modala */
+  overflow-y: auto; /* Dodaj pasek przewijania, jeśli zawartość jest dłuższa */
+}
+
+
+.close-button {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #2980b9;
+}
+
+.vertical {
+  display: grid;
+  grid-template-columns: auto auto; /* Dwie kolumny automatycznej szerokości */
+  grid-gap: 10px; /* Odstęp między pierwiastkami */
+}
+
+.element {
+  padding: 10px;
+  margin: 5px;
+}
+
+.hydrogen {
+  grid-column: 1; /* Wodór zajmuje dwie kolumny */
+  background-color: #fff; /* Białe tło */
+  color: #333; /* Kolor tekstu */
+}
+
+.oxygen {
+  grid-column: 2; /* Wodór zajmuje dwie kolumny */
+  background-color: #fff; /* Białe tło */
+  color: #333; /* Kolor tekstu */
+}
+
+.iron {
+  background-color: #fff; /* Białe tło */
+  color: #333; /* Kolor tekstu */
+}
+
+.kamil {
+  background-color: #00eaff; /* Białe tło */
+  color: #333; /* Kolor tekstu */
+}
