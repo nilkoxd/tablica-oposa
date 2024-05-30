@@ -76,6 +76,7 @@ body {
 
 .modal-content {
   background-color: #fefefe;
+  color: #333; /* Kolor tekstu w motywie domyślnym */
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -86,6 +87,9 @@ body {
   overflow-y: auto; /* Dodaj pasek przewijania, jeśli zawartość jest dłuższa */
 }
 
+.dark-theme .modal-content {
+    color: #f9f9f9; /* Kolor tekstu w motywie ciemnym */
+}
 
 .close-button {
   color: #aaa;
