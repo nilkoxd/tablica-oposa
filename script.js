@@ -91,40 +91,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.element');
     const kamil = document.querySelectorAll('.element');
 
-    // Obsługa przycisku zmieniającego motyw
+
     themeToggle.addEventListener('click', () => {
         toggleTheme();
     });
 
-   // Funkcja zmieniająca motyw
+  
 function toggleTheme() {
     if (body.classList.contains('dark-theme')) {
         body.classList.remove('dark-theme');
-        body.style.backgroundColor = '#f9f9f9'; // Białe tło
+        body.style.backgroundColor = '#f9f9f9'; 
         modal.classList.remove('dark-theme-modal');
-        modalContent.style.backgroundColor = '#fff'; // Białe tło modalu
-        modalContent.style.color = '#333'; // Kolor tekstu w motywie domyślnym 
+        modalContent.style.backgroundColor = '#fff'; 
+        modalContent.style.color = '#333'; 
         elements.forEach(element => {
             if (element.dataset.kamil === "true") {
-                element.style.backgroundColor = '#00eaff'; // Niebieskie tło dla kamil
+                element.style.backgroundColor = '#00eaff'; 
             } else {
-                element.style.backgroundColor = '#fff'; // Białe tło dla reszty
+                element.style.backgroundColor = '#fff'; 
             }
-            element.style.color = '#333'; // Kolor tekstu pierwiastków
+            element.style.color = '#333'; 
         });
     } else {
         body.classList.add('dark-theme');
-        body.style.backgroundColor = '#333'; // Czarne tło
+        body.style.backgroundColor = '#333'; 
         modal.classList.add('dark-theme-modal');
-        modalContent.style.backgroundColor = '#444'; // Czarne tło modalu
-        modalContent.style.color = '#f9f9f9'; // Kolor tekstu w motywie ciemnym
+        modalContent.style.backgroundColor = '#444'; 
+        modalContent.style.color = '#f9f9f9'; 
         elements.forEach(element => {
             if (element.dataset.kamil === "true") {
-                element.style.backgroundColor = '#005f6b'; // Inny kolor niebieski dla kamil w ciemnym motywie
+                element.style.backgroundColor = '#005f6b';
             } else {
-                element.style.backgroundColor = '#333'; // Czarne tło dla reszty
+                element.style.backgroundColor = '#333';
             }
-            element.style.color = '#f9f9f9'; // Kolor tekstu pierwiastków
+            element.style.color = '#f9f9f9'; 
         });
     }
 }
