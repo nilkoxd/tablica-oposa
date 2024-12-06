@@ -76,20 +76,19 @@ body {
 
 .modal-content {
   background-color: #fefefe;
-  color: #333; /* Kolor tekstu w motywie domyślnym */
+  color: #333; 
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   border-radius: 10px;
   position: relative;
-  max-height: 80vh; /* Ustaw maksymalną wysokość modala */
-  overflow-y: auto; /* Dodaj pasek przewijania, jeśli zawartość jest dłuższa */
+  max-height: 80vh; 
+  overflow-y: auto; 
 }
 
 .dark-theme .modal-content {
-    color: #f9f9f9; /* Kolor tekstu w motywie ciemnym */
-}
+    color: #f9f9f9; 
 
 .close-button {
   color: #aaa;
@@ -125,8 +124,8 @@ body {
 
 .vertical {
   display: grid;
-  grid-template-columns: auto auto; /* Dwie kolumny automatycznej szerokości */
-  grid-gap: 10px; /* Odstęp między pierwiastkami */
+  grid-template-columns: auto auto; 
+  grid-gap: 10px; 
 }
 
 .element {
@@ -135,23 +134,23 @@ body {
 }
 
 .hydrogen {
-  grid-column: 1; /* Wodór zajmuje dwie kolumny */
-  background-color: #fff; /* Białe tło */
-  color: #333; /* Kolor tekstu */
+  grid-column: 1; 
+  background-color: #fff; 
+  color: #333; 
 }
 
 .oxygen {
-  grid-column: 2; /* Wodór zajmuje dwie kolumny */
-  background-color: #fff; /* Białe tło */
-  color: #333; /* Kolor tekstu */
+  grid-column: 2; 
+  background-color: #fff;
+  color: #333; 
 }
 
 .iron {
-  background-color: #fff; /* Białe tło */
-  color: #333; /* Kolor tekstu */
+  background-color: #fff; 
+  color: #333; 
 }
 
 .kamil {
-  background-color: #00eaff; /* Białe tło */
-  color: #333; /* Kolor tekstu */
+  background-color: #00eaff; 
+  color: #333; 
 }
